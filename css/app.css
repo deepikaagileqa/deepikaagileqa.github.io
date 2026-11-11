@@ -74,6 +74,13 @@ ul {
    grid-template-columns: repeat(12, 1fr);
    grid-auto-rows: minmax(200px, auto);
    gap: 0;
+   grid-template-areas:
+    "hdr hdr hdr hdr hdr hdr hdr hdr hdr hdr hdr hdr"
+    "abt abt abt abt abt abt skl skl skl skl skl skl"
+    "exp exp exp exp exp exp exp exp exp exp exp exp"
+    "pro pro pro pro pro pro pro pro pro pro pro pro"
+    "con con con con con con con con con con con con"
+    "ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr";
 }
 
 
