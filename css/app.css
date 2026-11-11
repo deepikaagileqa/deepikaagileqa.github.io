@@ -32,7 +32,7 @@ ul {
 }
 
 /*======================================
-3. NAVIGATION BAR
+2. NAVIGATION BAR
 ======================================*/
 .navbar {
   display: grid;
@@ -63,6 +63,26 @@ ul {
 }
 .nav-links a:hover {
     color: #526B5D;
+}
+/*=========================================
+   3. COLOR AND TEXT STYLES
+========================================= */
+h1,h2 {
+   color: #263D35;
+}
+h1{
+  font-family: 'Playfair Display', serif;
+}
+.eyebrow {
+  color: #526B5D;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.section-heading {
+    text-align: center;
+    margin-bottom: 35px;
 }
 
 /* ======================================
