@@ -46,4 +46,14 @@ ul {
   z-index: 100;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
 }
+.logo,.footer-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 27px;
+  font-weight: 700;
+  color: #263D35;
+}
+.logo span,.footer-logo span {
+  color: #B58A65;
+}
+
 
