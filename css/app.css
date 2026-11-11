@@ -55,5 +55,14 @@ ul {
 .logo span,.footer-logo span {
   color: #B58A65;
 }
+.nav-links {
+  color: #25343A;
+  font-size: 13px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+.nav-links a:hover {
+    color: #526B5D;
+}
 
 
