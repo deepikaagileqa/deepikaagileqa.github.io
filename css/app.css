@@ -157,3 +157,37 @@ header {
     object-position: center center;
     display: block;
 }
+/* =====================================
+   6. BUTTONS
+========================================= */
+
+.hero-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 15px;
+}
+.btn {
+    display: inline-block;
+
+    padding: 11px 22px;
+
+    background-color: #526B5D;
+    color: #FFFFFF;
+
+    border: 2px solid #526B5D;
+    border-radius: 6px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+.btn:hover {
+    background-color: #3F5548;
+    border-color: #3F5548;
+    transform: translateY(-2px);
+}
+
