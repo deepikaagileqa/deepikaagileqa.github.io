@@ -121,15 +121,15 @@ header {
   grid-area: hdr;
   width: 100%;
   min-height: 480px;
-  grid-template-columns: 1fr;
+  grid-template-columns: 55% 45%;
   align-items: center;
-  background-image: linear-gradient(90deg,rgba(23, 42, 35, 0.90), rgba(23, 42, 35, 0.65),rgba(23, 42, 35, 0.10)),url("../assets/images/My Portfolio Picture.jpg");
-  background-size: cover;
-  background-position: 70% , center;
-  background-repeat: no-repeat;
+  background-image: #263D35;
+  overflow: hidden;
 }
 .hero-content {
-  width: 60%;
+  width: 85%;
+    padding: 40px 0 40px 50px;
+    grid-column: 1;
 } 
 .hero-content .eyebrow {
   color: #DCE7DC;
@@ -145,10 +145,28 @@ header {
   font-family: 'Playfair Display', serif;
   font-size: 23px;
   font-weight: 500;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+}
+.hero-image {
+    grid-column: 2;
+    height: 480px;
+    width: 100%;
 }
 .hero-content > p:not(.eyebrow) {
     color: #F4F4EF;
     font-size: 15px;
     margin-bottom: 25px;
+}
+.hero-image {
+    grid-column: 2;
+    height: 480px;
+    width: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
 }
