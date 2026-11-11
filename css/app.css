@@ -111,5 +111,20 @@ h1{
     "ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr";
 }
 
+/* =====================================
+   5. HERO / HEADER SECTION
+======================================== */
+
+header {
+  display: grid;
+  grid-area: hdr;
+  width: 100%;
+  min-height: 540px;
+  grid-template-columns: 1fr;
+  align-items: center;
+
+
+}
+
 
 
