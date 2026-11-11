@@ -3,15 +3,40 @@
  margin: 0;
  padding: 0;
 }
+
 html {
 scroll-behavior: smooth;
 scroll-padding-top: 85px;
 }
+
 body {
 font-family: 'Poppins', sans-serif;
 background-color: #F8F6F0;
 color: #25343A;
 font-size: 16px;
 line-height: 1.7;
+}
+img {
+    width: 100%;
+    display: block;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+.section {
+    padding: 65px 5%;
+}
+
+/*======================================
+3. NAVIGATION BAR
+======================================*/
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
 }
 
