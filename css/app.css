@@ -210,6 +210,23 @@ h1, h2, h3 {
     line-height: 1.6;
     margin-bottom: 12px;
 }
+.about-values {
+    background: #E5E9DF;
+    padding: 15px 22px;
+    border-radius: 9px;
+}
+.about-values p {
+    color: #263D35;
+    font-size: 14px;
+    margin: 12px 5px;
+}
+.about-values i {
+    width: 35px;
+    color: #526B5D;
+    font-size: 19px;
+    margin-right: 12px;
+}
+
 
 
 
