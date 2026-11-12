@@ -272,6 +272,18 @@ skill-card:hover {
     line-height: 1.5;
 }
 
+/* ============================
+   EXPERIENCE SECTION
+================================ */
+
+#experience {
+  display: grid;
+  grid-area: exp;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 35px;
+}
+
 
 
 
