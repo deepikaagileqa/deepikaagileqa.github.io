@@ -191,11 +191,28 @@ h1, h2, h3 {
     background: #F8F6F0;
 }
 .about-grid {
-   display: grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 35px;
     align-items: center;
 }
+.about-text {
+    padding: 5px 20px;
+    border-left: 4px solid #526B5D;
+}
+.about-text h3, .about-values h3 {
+    color: #263D35;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.about-text p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+
+
 
 
 
