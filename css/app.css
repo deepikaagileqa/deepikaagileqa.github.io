@@ -227,6 +227,22 @@ h1, h2, h3 {
     margin-right: 12px;
 }
 
+/* ============================
+   SKILLS SECTION
+================================ */
+
+#skills {
+    display: grid;
+    grid-area: skl;
+    grid-template-columns: 1fr;
+    padding: 25px 4%;
+    background: #E5E9DF;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
 
 
 
