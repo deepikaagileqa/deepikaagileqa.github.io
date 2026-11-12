@@ -70,39 +70,6 @@ h1, h2, h3 {
     display: none;
     cursor: pointer;
 }
-
-
-
-
-/*=========================================
-   3. COLOR AND TEXT STYLES
-========================================= */
-h1,h2 {
-   color: #263D35;
-}
-h1{
-  font-family: 'Playfair Display', serif;
-}
-.eyebrow {
-  color: #526B5D;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-.section-heading {
-  text-align: center;
-  margin-bottom: 35px;
-}
-.section-heading h2 {
-  font-size: 34px;
-  margin: 5px 0 10px;
-}
-.section-heading > p:last-child {
-  color: #68736D;
-  font-size: 14px;
-}
-
 /* ======================================
    4. MAIN GRID LAYOUT
 ========================================= */
@@ -110,98 +77,92 @@ h1{
    display: grid;
    width: 100%;
    grid-template-columns: repeat(12, 1fr);
-   grid-auto-rows: minmax(200px, auto);
+   grid-auto-rows: minmax(100px, auto);
    gap: 0;
    grid-template-areas:
     "hdr hdr hdr hdr hdr hdr hdr hdr hdr hdr hdr hdr"
-    "abt abt abt abt abt abt skl skl skl skl skl skl"
+    "abt abt abt abt abt abt abt abt abt abt abt abt"
+    "skl skl skl skl skl skl skl skl skl skl skl skl"
     "exp exp exp exp exp exp exp exp exp exp exp exp"
     "pro pro pro pro pro pro pro pro pro pro pro pro"
-    "con con con con con con con con con con con con"
-    "ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr";
+    "con con con con con con con con con con con con";
 }
 
 /* =====================================
    5. HERO / HEADER SECTION
 ======================================== */
 
-
-header {
+.hero {
     display: grid;
     grid-area: hdr;
-    width: 100%;
-    min-height: 480px;
-    grid-template-columns: 55% 45%;
-    grid-template-rows: 1fr;
-
+    grid-template-columns: 58% 42%;
     align-items: center;
-
-    background-color: #263D35;
+    min-height: 290px;
+    width: 100%;
+    background: #263D35;
     overflow: hidden;
 }
 
 .hero-content {
     grid-column: 1;
-    grid-row: 1;
-    width: 100%;
-    padding: 40px 30px 40px 50px;
+    padding: 35px 20px 35px 8%;
+    color: #FFFFFF;
 }
-
+.eyebrow {
+    color: #526B5D;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+}
+.hero-content .eyebrow {
+    color: #DCE7DC;
+}
+.hero h1 {
+    color: #FFFFFF;
+    font-size: 42px;
+    line-height: 1.2;
+    margin: 12px 0;
+}
+.hero h2 {
+    color: #E2E9E1;
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+.hero-content > p:not(.eyebrow) {
+    color: #F4F4EF;
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 450px;
+    margin-bottom: 20px;
+}
 .hero-image {
     grid-column: 2;
-    grid-row: 1;
+    height: 290px;
     width: 100%;
-    height: 480px;
     overflow: hidden;
-    background-color: #263D35;
-    display: grid;
-    place-items: center;
-
 }
-
 .hero-image img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    object-position: center center;
-    display: block;
-}
-/* =====================================
-   6. BUTTONS
-========================================= */
-
-.hero-buttons {
-  display: grid;
-  grid-template-columns: repeat(2, max-content);
-  gap: 15px;
+    object-fit: cover;
+    object-position: center 20%;
 }
 .btn {
     display: inline-block;
-
-    padding: 11px 22px;
-
-    background-color: #526B5D;
+    background: #526B5D;
     color: #FFFFFF;
-
-    border: 2px solid #526B5D;
-    border-radius: 6px;
-
-    font-family: 'Poppins', sans-serif;
-    font-size: 13px;
-    font-weight: 600;
-
-    cursor: pointer;
-
-    transition: 0.3s ease;
+    padding: 11px 22px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.btn i {
+    margin-left: 10px;
 }
 .btn:hover {
-    background-color: #3F5548;
-    border-color: #3F5548;
+    background: #708B76;
     transform: translateY(-2px);
 }
-.btn-outline {
-    background-color: transparent;
-    border-color: #FFFFFF;
-    color: #FFFFFF;
-}
-
