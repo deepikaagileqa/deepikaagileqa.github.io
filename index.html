@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="css/app.css">
+  <script src="js/app.js" defer></script>
   <title>Deepika Sharma| Personal Portfolio</title>
 </head>
 <body>
@@ -16,16 +17,20 @@
          NAVIGATION BAR
 ================================== -->
 
-<nav class="navbar">
-<a href="#home"class="logo">Deepika<span>.</span></a>
-<ul class="nav-links">
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#experience">Experience</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
+<nav id="navbar">
+<a href="#home" class="logo">Deepika<span>.</span></a>
+  <div id="hamburger" onclick="toggleMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <div id="nav-links">
+    <a href="#home" onclick="closeMenu()">Home</a>
+    <a href="#about" onclick="closeMenu()">About</a>
+    <a href="#skills" onclick="closeMenu()">Skills</a>
+    <a href="#projects" onclick="closeMenu()">Projects</a>
+    <a href="#contact" onclick="closeMenu()">Contact</a>
+  </div>
 </nav>
 
 <!--==============================
@@ -43,13 +48,10 @@
     <h1>Hi, I'm Deepika Sharma</h1>
     <h2>QA Engineer | Aspiring Web & AI Developer</h2>
     <p>I am passionate about software quality, technology and creating meaningful digital experiences.With over 6 years of QA experience, I enjoy learning new technologies and turning ideas into practical solutions.</p>
-  <div class="hero-buttons">
-     <a href="#projects" class="btn">Explore My Work</a>
-    <a href="#contact" class="btn btn-outline">Contact Me</a>
-  </div>
+    <a href="#projects" class="btn">Explore My Work<i class="fa-solid fa-arrow-right"></i></a>
   </div>
   <div class="hero-image">
-    <img src="assets/images/My Portfolio Picture.jpg"alt="Portrait of Deepika Sharma">
+    <img src="assets/images/My Portfolio Picture.jpg"alt="Professional Portrait of Me">
   </div>
 </header>
 
