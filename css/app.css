@@ -25,36 +25,54 @@ h1, h2, h3 {
 /*======================================
 2. NAVIGATION BAR
 ======================================*/
+
 .navbar {
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
-  padding: 12px 5%;
-  min-height: 75px;
-  background-color: #F8F6F0;
+  width: 100%;
+  min-height: 65px;
+  padding: 10px 4%;
+  background: #F8F6F0;
   position: sticky;
   top: 0;
-  z-index: 100;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  z-index: 20;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
-.logo,.footer-logo {
+
+.logo {
   font-family: 'Playfair Display', serif;
   font-size: 27px;
   font-weight: 700;
   color: #263D35;
 }
 .logo span,.footer-logo span {
-  color: #B58A65;
+  color: #8BA58E;
 }
-.nav-links {
-  color: #25343A;
+#nav-links {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  justify-content: end;
+  gap: 28px;
+}
+#nav-links a {
+  color: #202A30;
   font-size: 13px;
-  font-weight: 600;
-  transition: color 0.3s ease;
+  font-weight: 500;
+  padding: 8px 3px;
+  transition: 0.3s;
 }
-.nav-links a:hover {
+#nav-links a:hover {
     color: #526B5D;
+    border-bottom: 2px solid #526B5D;
 }
+#hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+
+
 
 /*=========================================
    3. COLOR AND TEXT STYLES
