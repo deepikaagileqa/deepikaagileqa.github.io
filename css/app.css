@@ -190,6 +190,13 @@ h1, h2, h3 {
     padding: 30px 5%;
     background: #F8F6F0;
 }
+.about-grid {
+   display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    align-items: center;
+}
+
 
 
 
