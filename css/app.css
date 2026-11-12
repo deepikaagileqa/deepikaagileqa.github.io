@@ -95,25 +95,20 @@ h1, h2, h3 {
 .hero {
     display: grid;
     grid-area: hdr;
-    grid-template-columns: 58% 42%;
+    grid-template-columns: 1fr;
     align-items: center;
-    min-height: 290px;
-    width: 100%;
-    background: #263D35;
+    min-height: 380px;
+    background-image: url("../assets/images/Portfolio\ header.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     overflow: hidden;
 }
 
 .hero-content {
-    grid-column: 1;
-    padding: 35px 20px 35px 8%;
+    width: 58%;
+    padding: 35px 20px 35px 6%;
     color: #FFFFFF;
-}
-.eyebrow {
-    color: #526B5D;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
-    margin-bottom: 8px;
 }
 .hero-content .eyebrow {
     color: #DCE7DC;
@@ -131,24 +126,12 @@ h1, h2, h3 {
     margin-bottom: 12px;
 }
 .hero-content > p:not(.eyebrow) {
-    color: #F4F4EF;
+    color: #FFFFFF;
     font-size: 15px;
     line-height: 1.6;
     max-width: 450px;
     margin-bottom: 20px;
-}
-.hero-image {
-    grid-column: 2;
-    height: 290px;
-    width: 100%;
-    overflow: hidden;
-}
-.hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 20%;
-}
+  }
 .btn {
     display: inline-block;
     background: #526B5D;
