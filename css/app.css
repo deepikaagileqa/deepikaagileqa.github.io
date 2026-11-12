@@ -250,6 +250,16 @@ h1, h2, h3 {
     text-align: center;
     transition: 0.3s;
 }
+skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.10);
+}
+
+.skill-card i {
+    color: #526B5D;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
 
 
 
