@@ -166,3 +166,18 @@ h1, h2, h3 {
     background: #708B76;
     transform: translateY(-2px);
 }
+/* ============================
+   SECTION HEADING
+================================ */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.section-heading h2 {
+    color: #263D35;
+    font-size: 28px;
+}
+
+
+
