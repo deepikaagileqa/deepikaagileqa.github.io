@@ -31,8 +31,8 @@ h1, h2, h3 {
   grid-template-columns: 1fr 2fr;
   align-items: center;
   width: 100%;
-  min-height: 65px;
-  padding: 10px 4%;
+  min-height: 75px;
+  padding: 10px 5%;
   background: #F8F6F0;
   position: sticky;
   top: 0;
@@ -53,7 +53,9 @@ h1, h2, h3 {
   display: grid;
   grid-template-columns: repeat(5, auto);
   justify-content: end;
-  gap: 28px;
+  align-items: center;
+  gap: 25px;
+  padding-right: 25px;
 }
 #nav-links a {
   color: #202A30;
@@ -97,10 +99,10 @@ h1, h2, h3 {
     grid-area: hdr;
     grid-template-columns: 1fr;
     align-items: center;
-    min-height: 380px;
+    min-height: 430px;
     background-image: url("../assets/images/Portfolio\ header.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
     overflow: hidden;
 }
@@ -233,7 +235,7 @@ h1, h2, h3 {
     text-align: center;
     transition: 0.3s;
 }
-skill-card:hover {
+.skill-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 12px rgba(0,0,0,0.10);
 }
@@ -265,8 +267,9 @@ skill-card:hover {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 35px;
-  padding: 25px 5%;
   background: #F8F6F0;
+  min-height: 430px;
+  padding: 40px 5%;
 }
 .experience-text h2 {
     color: #263D35;
@@ -289,10 +292,17 @@ skill-card:hover {
     line-height: 1.6;
 }
 
+.experience-image {
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+}
+
 .experience-image img {
     width: 100%;
-    height: 175px;
+    height: 100%;
     object-fit: cover;
+    object-position: center;
     border-radius: 9px;
 }
 
