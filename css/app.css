@@ -179,5 +179,17 @@ h1, h2, h3 {
     font-size: 28px;
 }
 
+/* ============================
+   ABOUT SECTION
+================================ */
+
+#about {
+    display: grid;
+    grid-area: abt;
+    grid-template-columns: 1fr;
+    padding: 30px 5%;
+    background: #F8F6F0;
+}
+
 
 
