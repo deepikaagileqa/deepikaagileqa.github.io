@@ -412,6 +412,25 @@ h1, h2, h3 {
     object-fit: cover;
     object-position: center;
 }
+.project-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: start;
+    padding: 18px;
+}
+.project-content h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #263D35;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+.project-content p {
+    color: #444;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
 
 
 
