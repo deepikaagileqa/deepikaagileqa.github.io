@@ -351,9 +351,15 @@ h1, h2, h3 {
     display: grid;
     grid-area: pro;
     grid-template-columns: 1fr;
-    padding: 30px 4%;
+    width: 100%;
+    padding: 45px 5%;
     background: #E5E9DF;
 }
+.section-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
 
 
 
