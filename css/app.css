@@ -26,7 +26,14 @@ h1, h2, h3 {
 2. NAVIGATION BAR
 ======================================*/
 
-.navbar {
+#logo {
+  width: 280px;
+  position: fixed;
+  z-index: 5;
+  top: 10px;
+  left: 50px;
+}
+#logo {
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
@@ -40,15 +47,8 @@ h1, h2, h3 {
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
-.logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 27px;
-  font-weight: 700;
-  color: #263D35;
-}
-.logo span,.footer-logo span {
-  color: #8BA58E;
-}
+
+
 #nav-links {
   display: grid;
   grid-template-columns: repeat(5, auto);
