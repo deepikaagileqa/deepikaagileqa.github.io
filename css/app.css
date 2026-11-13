@@ -33,6 +33,22 @@ h1, h2, h3 {
   top: 10px;
   left: 50px;
 }
+#logo {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  width: 100%;
+  min-height: 75px;
+  padding: 10px 5%;
+  background: #F8F6F0;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+
+
 #nav-links {
   display: grid;
   grid-template-columns: repeat(5, auto);
