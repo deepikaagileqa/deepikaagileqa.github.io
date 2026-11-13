@@ -343,6 +343,18 @@ h1, h2, h3 {
     border-radius: 9px;
 }
 
+/* ============================
+   PROJECTS SECTION
+================================ */
+
+#projects {
+    display: grid;
+    grid-area: pro;
+    grid-template-columns: 1fr;
+    padding: 30px 4%;
+    background: #E5E9DF;
+}
+
 
 
 
