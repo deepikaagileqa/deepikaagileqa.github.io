@@ -306,6 +306,17 @@ h1, h2, h3 {
     padding: 15px 5px;
 }
 
+.stat-box:nth-child(1),
+.stat-box:nth-child(2) {
+    border-bottom: 2px solid #DCE1D8;
+}
+
+.stat-box:nth-child(1),
+.stat-box:nth-child(3) {
+    border-right: 2px solid #DCE1D8;
+}
+
+
 
 
 
