@@ -377,7 +377,7 @@ h1, h2, h3 {
     line-height: 1.6;
 }
 .project-category {
-   display: grid;
+    display: grid;
     grid-template-columns: 1fr;
     margin-bottom: 40px;
 }
@@ -395,6 +395,16 @@ h1, h2, h3 {
     grid-template-columns: repeat(3, 1fr);
     gap: 22px;
     align-items: stretch;
+}
+.project-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: start;
+    background: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    transition: 0.3s;
 }
 
 
