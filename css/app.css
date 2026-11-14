@@ -26,37 +26,35 @@ h1, h2, h3 {
 2. NAVIGATION BAR
 ======================================*/
 
-#logo {
-  width: 280px;
-  position: fixed;
-  z-index: 5;
-  top: 10px;
-  left: 50px;
+.navbar {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    align-items: center;
+    width: 100%;
+    min-height: 85px;
+    padding: 10px 5%;
+    background: #F8F6F0;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
-#logo {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  align-items: center;
-  width: 100%;
-  min-height: 75px;
-  padding: 10px 5%;
-  background: #F8F6F0;
-  position: sticky;
-  top: 0;
-  z-index: 20;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+.logo {
+    width: 250px;
+}
+.logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+#nav-links a {
+    color: #202A30;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 3px;
+    transition: 0.3s;
 }
 
-
-
-#nav-links {
-  display: grid;
-  grid-template-columns: repeat(5, auto);
-  justify-content: end;
-  align-items: center;
-  gap: 25px;
-  padding-right: 25px;
-}
 #nav-links a {
   color: #202A30;
   font-size: 13px;
@@ -68,10 +66,7 @@ h1, h2, h3 {
     color: #526B5D;
     border-bottom: 2px solid #526B5D;
 }
-#hamburger {
-    display: none;
-    cursor: pointer;
-}
+
 /* ======================================
    4. MAIN GRID LAYOUT
 ========================================= */
