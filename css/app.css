@@ -39,20 +39,22 @@ h1, h2, h3 {
     height: auto;
     display: block;
 }
+#nav-links {
+    display: grid;
+    grid-template-columns: repeat(5, max-content);
+    justify-content: end;
+    justify-self: stretch;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
 #nav-links a {
     color: #202A30;
     font-size: 14px;
     font-weight: 500;
     padding: 8px 3px;
     transition: 0.3s;
-}
-
-#nav-links a {
-  color: #202A30;
-  font-size: 13px;
-  font-weight: 500;
-  padding: 8px 3px;
-  transition: 0.3s;
 }
 #nav-links a:hover {
     color: #526B5D;
