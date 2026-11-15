@@ -536,7 +536,13 @@ footer {
 /* ============================
    FOOTER SECTION
 ================================ */
+#footer {
+  width: 100%;
+  height: 100px;
+  background: #263D35;
+  color: #fff;
 
+}
 #footerlogo{
    width: 120px;
    height: auto;
