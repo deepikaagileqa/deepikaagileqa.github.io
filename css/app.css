@@ -22,7 +22,7 @@ h1, h2, h3 {
     grid-template-columns: 1fr 2fr;
     align-items: center;
     width: 100%;
-    min-height: 65px;
+    min-height: 75px;
     padding: 10px 4%;
     background: #F8F6F0;
     position: sticky;
@@ -45,16 +45,21 @@ h1, h2, h3 {
 
 #nav-links {
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(5, max-content);
     justify-content: end;
-    gap: 28px;
+    align-items: center;
+    gap: 25px;
+    white-space: nowrap;
 }
+
 
 #nav-links a {
     color: #202A30;
     font-size: 13px;
     font-weight: 500;
     padding: 8px 3px;
+    transition: 0.3s;
+    text-decoration: none;
     transition: 0.3s;
 }
 
