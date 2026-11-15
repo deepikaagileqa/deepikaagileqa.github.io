@@ -485,3 +485,67 @@ h1, h2, h3 {
     background: #708B76;
 }
 
+.contact-form {
+    background: #FFFFFF;
+    padding: 15px;
+    border-radius: 9px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+#portfolioForm {
+    display: grid;
+    gap: 8px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #D5DAD5;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+textarea {
+    height: 75px;
+    resize: vertical;
+}
+#portfolioForm button {
+    width: 100%;
+    padding: 10px;
+    background: #526B5D;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#portfolioForm button:hover {
+    background: #263D35;
+}
+#form-message {
+    color: #263D35;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
