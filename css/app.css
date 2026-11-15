@@ -626,3 +626,77 @@ footer {
     font-size: 11px;
     text-align: center;
 }
+
+/* ============================
+   RESPONSIVE DESIGN
+============================ */
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+
+    #about,#experience {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-content {
+        width: 65%;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+
+    /* Main sections */
+    #about,
+    #experience {
+        grid-template-columns: 1fr;
+        padding: 30px 5%;
+    }
+
+    /* Navigation */
+    .navbar {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    #nav-links {
+        grid-template-columns: repeat(2, max-content);
+        justify-content: center;
+        gap: 12px;
+        white-space: normal;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 450px;
+        background-position: 65% center;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 25px;
+    }
+
+    /* Skills and Projects */
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer */
+    .footer-top {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}
