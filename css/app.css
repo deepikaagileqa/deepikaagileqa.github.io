@@ -19,55 +19,43 @@ h1, h2, h3 {
 ======================================*/
 .navbar {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 200px minmax(0, 1fr);
     align-items: center;
     width: 100%;
-    min-height: 75px;
-    padding: 10px 4%;
-    background: #F8F6F0;
-    position: sticky;
-    top: 0;
-    z-index: 20;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    min-height: 70px;
+    padding: 10px 3%;
+  
+    box-sizing: border-box;
 }
 
 .logo {
     width: 220px;
 }
 .logo img {
-  width: 160px;
-  position: fixed;
-  z-index: 13;
-  top: 25px;
-  left: 33px;
+   width: 100%;
+    height: auto;
+    display: block;
 }
-
-
 #nav-links {
     display: grid;
     grid-template-columns: repeat(5, max-content);
+    grid-auto-flow: column;
     justify-content: end;
     align-items: center;
-    gap: 25px;
-    white-space: nowrap;
+    gap: 20px;
 }
-
-
 #nav-links a {
-    color: #202A30;
-    font-size: 13px;
-    font-weight: 500;
-    padding: 8px 3px;
-    transition: 0.3s;
-    text-decoration: none;
-    transition: 0.3s;
+    color: #263D35;
+    display: block;
+    margin: 0;
+    padding: 8px 0;
 }
-
-
 #nav-links a:hover {
     color: #526B5D;
     border-bottom: 2px solid #526B5D;
 }
+
+
 
 /* ======================================
    4. MAIN GRID LAYOUT
@@ -614,8 +602,16 @@ footer {
     background: #526B5D;
     color: #FFFFFF;
     border-radius: 50%;
-    font-size: 17px;
     transition: 0.3s;
+}
+.footer-social img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+.footer-social a:hover {
+    background: #B5CBB6;
+    transform: translateY(-3px);
 }
 
 .copyright {
