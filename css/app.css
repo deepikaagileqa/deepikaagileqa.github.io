@@ -438,14 +438,50 @@ h1, h2, h3 {
     text-align: center;
 }
 
+/* ============================
+   CONTACT SECTION
+================================ */
 
+#contact {
+    display: grid;
+    grid-area: con;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    gap: 25px;
+    padding: 30px 5%;
+    background: #F8F6F0;
+}
+.contact-info h2 {
+    color: #263D35;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
 
-
-
-
-
-
-
-
-
+.contact-info > p:not(.eyebrow) {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+.email i {
+    color: #526B5D;
+    margin-right: 8px;
+}
+.social-links {
+    display: grid;
+    grid-template-columns: repeat(3, 38px);
+    gap: 12px;
+    margin-top: 15px;
+}
+.social-links a {
+    display: grid;
+    place-items: center;
+    width: 35px;
+    height: 35px;
+    background: #263D35;
+    color: #FFFFFF;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.social-links a:hover {
+    background: #708B76;
+}
 
