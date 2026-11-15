@@ -579,10 +579,12 @@ footer > div {
   footer > div:last-child {
     text-align: right;
     text-decoration: none;
+    background: #263D35;
 }
 
  footer > div:last-child > a {
      text-decoration: none;
+     background: #263D35;
 }
 
 
