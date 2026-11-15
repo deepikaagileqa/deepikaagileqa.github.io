@@ -535,6 +535,48 @@ textarea {
     font-size: 12px;
     margin-top: 8px;
 }
+footer {
+  display: grid;
+  grid-area: ftr;
+  width: 100%;
+  grid-template-columns: 1fr 3fr 1fr;
+  background: #3c2415;
+  border-bottom: 1px, solid #222;
+  overflow: hidden;
+  gap: 30px;
+   
+}
+
+/* ============================
+   FOOTER SECTION
+================================ */
+
+#footerlogo{
+   width: 120px;
+   height: auto;
+}
+
+footer > div {
+    padding: 15px 30px;
+}
+
+  footer > div:nth-child(2) {
+    text-align: center;
+    background: #3c2415;
+    color: #fff;
+    font-size: 0.8em;
+    padding: 30px ;
+}
+
+  footer > div:last-child {
+    text-align: right;
+    text-decoration: none;
+}
+
+ footer > div:last-child > a {
+     text-decoration: none;
+}
+
 
 
 
