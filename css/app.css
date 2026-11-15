@@ -17,17 +17,6 @@ h1, h2, h3 {
 /*======================================
 2. NAVIGATION BAR
 ======================================*/
-
-.logo {
-    width: 250px;
-}
-.logo img {
-    width: 160px;
-  position: fixed;
-  z-index: 13;
-  top: 25px;
-  left: 33px;
-}
 .navbar {
     display: grid;
     grid-template-columns: 280px 1fr;
@@ -41,6 +30,17 @@ h1, h2, h3 {
     z-index: 20;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
+.logo {
+    width: 250px;
+}
+.logo img {
+  width: 160px;
+  position: fixed;
+  z-index: 13;
+  top: 25px;
+  left: 33px;
+}
+
 
 #nav-links {
     display: grid;
