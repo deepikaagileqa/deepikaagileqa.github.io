@@ -18,22 +18,8 @@ h1, h2, h3 {
 2. NAVIGATION BAR
 ======================================*/
 
-.navbar {
-    display: grid;
-    grid-template-columns: 280px 1fr;
-    align-items: center;
-    width: 100%;
-    min-height: 85px;
-    padding: 10px 5%;
-    background: #F8F6F0;
-    position: sticky;
-    top: 0;
-    z-index: 20;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
-
-.logo img {
-  width: 160px;
+.logo {
+  width: 150px;
   position: fixed;
   z-index: 13;
   top: 25px;
