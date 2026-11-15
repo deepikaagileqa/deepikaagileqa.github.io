@@ -19,7 +19,7 @@ h1, h2, h3 {
 ======================================*/
 .navbar {
     display: grid;
-    grid-template-columns: 280px 1fr;
+    grid-template-columns: 250px 1fr;
     align-items: center;
     width: 100%;
     min-height: 85px;
@@ -31,7 +31,7 @@ h1, h2, h3 {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 .logo {
-    width: 250px;
+    width: 220px;
 }
 .logo img {
   width: 160px;
@@ -46,19 +46,23 @@ h1, h2, h3 {
     display: grid;
     grid-template-columns: repeat(5, max-content);
     justify-content: end;
-    justify-self: stretch;
+    justify-self: center;
     align-items: center;
     gap: 30px;
     width: 100%;
+    white-space: nowrap;
 }
 
 
 #nav-links > a {
-  color: #000;
+  color: #202A30;
+  font-size: 14px;
   font-weight: 500;
   text-decoration: none;
-  margin: 0px 21px;
+  padding: 8px 0;
+    transition: 0.3s;
 }
+
 #nav-links a:hover {
     color: #526B5D;
     border-bottom: 2px solid #526B5D;
@@ -553,53 +557,59 @@ footer {
 /* ============================
    FOOTER SECTION
 ================================ */
-#footer {
-  width: 100%;
-  height: 100px;
-  background: #263D35;
-  color: #fff;
-
-}
-#footerlogo{
-   width: 120px;
-   height: auto;
-}
-
-footer > div {
-    padding: 15px 30px;
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
     background: #263D35;
+    color: #FFFFFF;
 }
 
-  footer > div:nth-child(2) {
+.footer-top {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    padding: 15px 4%;
+    gap: 15px;
+}
+
+.footer-logo {
+    color: #FFFFFF;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.footer-top > p {
     text-align: center;
-    background: #263D35;
-    color: #fff;
-    font-size: 0.8em;
-    padding: 30px ;
+    font-size: 12px;
 }
 
-  footer > div:last-child {
-    text-align: right;
-    text-decoration: none;
-    background: #263D35;
+.footer-social {
+    display: grid;
+    grid-template-columns: repeat(3, 30px);
+    justify-content: end;
+    gap: 12px;
 }
 
- footer > div:last-child > a {
-     text-decoration: none;
-     background: #263D35;
+.footer-social a {
+    display: grid;
+    place-items: center;
+    color: #FFFFFF;
+    font-size: 18px;
 }
 
+.footer-social a:hover {
+    color: #B5CBB6;
+}
 
+.copyright {
+    text-align: center;
+    padding: 12px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
 
-
-
-
-
-
-
-
-
-
-
+.copyright p {
+    font-size: 11px;
+}
 
 
